@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# THE EDITOR'S CUT — Premium Video Editor Portfolio
 
-## Getting Started
+A cinematic, highly creative portfolio website for professional video editors. This portfolio breaks away from generic freelancer templates and feels like an edited piece of video itself.
 
-First, run the development server:
+## 🎬 Features
 
+- **Immersive Hero Section** with "EVERY FRAME HAS A REASON" reveal
+- **Interactive Work Grid** with hover-triggered video previews
+- **Before/After Slider** with draggable comparison interface
+- **Rhythm & Craft Section** showcasing editing philosophy with timeline-inspired UI
+- **Custom Cursor** that responds to interactive elements (PLAY, DRAG, VIEW, SCRUB)
+- **Cinematic Contact Section** styled like film credits
+- **Full Responsive Design** optimized for desktop, tablet, and mobile
+- **Dark cinematic theme** with subtle film grain texture
+- **Smooth animations** using Framer Motion
+- **Editorial navigation** that feels premium, not corporate
+
+## 🚀 Getting Started
+
+### Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Build for production:
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📝 Customization Guide
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Update Editor Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Replace all `[EDITOR NAME]` placeholders throughout the site:
+- `src/app/layout.tsx` — Page title and meta description
+- `src/components/hero/Hero.tsx` — Hero section name
+- `src/components/contact/Contact.tsx` — Footer credits
+- `src/components/ui/Navigation.tsx` — Logo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 2. Add Real Projects
 
-## Deploy on Vercel
+Edit `src/data/projects.ts`:
+- Update project titles, categories, descriptions
+- Add client names and roles
+- Link to actual video files
+- Add case studies with brief/problem/approach/craft details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Replace Placeholder Videos & Images
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+See `public/ASSETS_README.md` for a complete list of video and image assets to replace.
+
+Place your videos in `/public/videos/`  
+Place your images in `/public/images/`
+
+### 4. Update Contact Links
+
+Edit `src/components/contact/Contact.tsx`:
+- Replace email, Instagram, Twitter, WhatsApp links
+- Add or remove social platforms as needed
+
+### 5. Customize About Section
+
+Edit `src/components/about/About.tsx`:
+- Write your personal editing philosophy
+- Update tools/software list
+- Add specializations
+
+## 🛠 Tech Stack
+
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (animations)
+- **Lucide React** (icons)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── layout.tsx      # Root layout with fonts and metadata
+│   ├── page.tsx        # Homepage assembling all sections
+│   └── globals.css     # Global styles and film grain effect
+├── components/         # React components
+│   ├── hero/          # Hero section
+│   ├── work/          # Portfolio grid
+│   ├── before-after/  # Comparison slider
+│   ├── rhythm/        # Timeline craft showcase
+│   ├── about/         # About section
+│   ├── contact/       # Contact section
+│   └── ui/            # Reusable UI (Navigation, CustomCursor)
+├── data/              # Project data and content
+│   └── projects.ts    # Portfolio content (EDIT THIS!)
+├── types/             # TypeScript type definitions
+│   └── index.ts
+└── hooks/             # Custom React hooks
+    └── useMousePosition.ts
+
+public/
+├── videos/            # Video assets
+├── images/            # Image assets
+└── ASSETS_README.md   # Asset replacement guide
+```
+
+## 🎨 Design Philosophy
+
+This portfolio communicates:
+- **Editing skill through interaction design** — pacing, rhythm, transitions
+- **Premium, cinematic aesthetic** — dark theme, film grain, generous spacing
+- **Editorial typography** — strong hierarchy, minimal but impactful
+- **Purposeful motion** — every animation serves a function
+
+## 📱 Responsive Design
+
+The site adapts gracefully:
+- Desktop: Full interactive experience with custom cursor
+- Tablet: Touch-optimized interactions
+- Mobile: Clean, streamlined layout with drawer navigation
+
+## 🎯 Important Notes
+
+- **Video files should be optimized** — use compressed MP4s for web
+- **Add poster images** — prevents layout shift while videos load
+- **Lazy loading is built-in** — videos load as needed
+- **All placeholder text is clearly marked** — search for `[Placeholder:` to find them
+
+## 📄 License
+
+This is a custom-built portfolio. Feel free to use and customize.
+
+---
+
+**Built with precision. Edited with purpose.**
