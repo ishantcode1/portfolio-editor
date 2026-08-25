@@ -37,7 +37,6 @@ export function Work() {
 
 function ProjectCard({ project, index }: { project: any; index: number }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [isVertical, setIsVertical] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -84,13 +83,6 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
     }
   };
 
-  const handleVideoLoad = () => {
-    if (videoRef.current) {
-      const { videoWidth, videoHeight } = videoRef.current;
-      setIsVertical(videoHeight > videoWidth);
-    }
-  };
-
   return (
     <motion.div
       ref={cardRef}
@@ -102,24 +94,23 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       onMouseLeave={handleMouseLeave}
       className="group relative cursor-pointer"
     >
-      {/* Video Preview - Adaptive aspect ratio */}
-      <div className={`relative bg-gray-900 overflow-hidden mb-6 ${isVertical ? 'aspect-[9/16]' : 'aspect-video'}`}>
+      {/* STRICT 16:9 Video Preview */}
+      <div className="relative bg-gray-900 overflow-hidden mb-6 aspect-video">
         <video
           ref={videoRef}
           poster={project.posterUrl}
           loop
           playsInline
-          onLoadedMetadata={handleVideoLoad}
           className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
         >
           <source src={project.videoPreviewUrl} type="video/mp4" />
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none" />
 
         {/* Project Number */}
-        <div className="absolute top-4 right-4 font-mono text-xs tracking-widest text-white/70">
+        <div className="absolute top-4 right-4 font-mono text-xs tracking-widest text-white/70 pointer-events-none">
           {String(index + 1).padStart(2, "0")}
         </div>
       </div>
