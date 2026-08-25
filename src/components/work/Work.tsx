@@ -121,9 +121,6 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           <h3 className="text-2xl md:text-3xl font-bold tracking-tight group-hover:text-gray-300 transition-colors">
             {project.title}
           </h3>
-          <span className="font-mono text-xs text-gray-500 tracking-wider mt-2 shrink-0">
-            {project.year}
-          </span>
         </div>
 
         <div className="flex flex-wrap gap-3 text-xs font-mono tracking-wider text-gray-400">
