@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Rishu | Video Editor",
-  description: "Portfolio of Rishu, presenting creative video editing, visual pacing, color grading, sound design and storytelling.",
+  description: "Portfolio of Rishu, presenting creative video editing, visual pacing, sound design and storytelling.",
 };
 
 export default function RootLayout({

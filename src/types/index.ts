@@ -5,7 +5,6 @@ export interface CaseStudy {
   craft: {
     pacing: string;
     soundDesign: string;
-    color: string;
     transitions: string;
     storytelling: string;
   };
@@ -22,7 +21,7 @@ export interface Project {
   videoPreviewUrl: string; // URL to a muted, fast-loading MP4 preview
   videoFullUrl?: string;    // URL to full video (e.g., YouTube/Vimeo ID or raw MP4)
   videoRawUrl?: string;     // URL to RAW footage for comparison
-  videoFinalUrl?: string;   // URL to FINAL graded/edited footage for comparison
+  videoFinalUrl?: string;   // URL to FINAL edited footage for comparison
   posterUrl: string;        // High quality static frame
   caseStudy?: CaseStudy;
 }

@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Film, Activity, Palette, AudioLines } from "lucide-react";
+import { Film, Activity, AudioLines, Zap } from "lucide-react";
 
 const processSteps = [
   { id: "narrative", title: "NARRATIVE", desc: "Finding the story hidden in the dailies.", icon: Film, color: "from-blue-500/20 to-cyan-500/20" },
   { id: "rhythm", title: "RHYTHM", desc: "Cutting strictly to the heartbeat of the track.", icon: Activity, color: "from-purple-500/20 to-pink-500/20" },
-  { id: "color", title: "COLOR", desc: "Grading that establishes immediate mood.", icon: Palette, color: "from-orange-500/20 to-red-500/20" },
+  { id: "momentum", title: "MOMENTUM", desc: "Transitions that keep every moment moving forward.", icon: Zap, color: "from-orange-500/20 to-red-500/20" },
   { id: "sound", title: "SOUND", desc: "Layering audio that makes the timeline feel alive.", icon: AudioLines, color: "from-green-500/20 to-emerald-500/20" },
 ];
 

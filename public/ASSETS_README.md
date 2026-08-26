@@ -13,14 +13,13 @@ Place these in the `/public/videos/` folder:
 ## 2. BEFORE/AFTER VIDEOS
 
 Place these in the `/public/videos/` folder:
-- `/public/videos/placeholder-raw.mp4` (RAW footage for color grade/edit comparison)
+- `/public/videos/placeholder-raw.mp4` (RAW footage for edit comparison)
 - `/public/videos/placeholder-final.mp4` (FINAL processed footage for comparison)
 
 ## 3. RHYTHM SECTION VIDEOS (Demonstration loops)
 
 Place these in the `/public/videos/` folder:
 - `/public/videos/timeline-cutting.mp4` (Short visual demonstrating cutting pacing)
-- `/public/videos/timeline-color.mp4` (Short loop showing grading adjustment)
 - `/public/videos/timeline-sound.mp4` (Loop showing audio waves / impact)
 - `/public/videos/timeline-motion.mp4` (Loop demonstrating dynamic transitions/movement)
 - `/public/videos/timeline-story.mp4` (Loop showing narrative composition)

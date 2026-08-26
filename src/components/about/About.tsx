@@ -44,7 +44,7 @@ export function About() {
               The Suite
             </p>
             <div className="flex flex-wrap gap-4 text-xs font-mono tracking-widest uppercase">
-              {["Premiere Pro", "CapCut"].map((tool) => (
+              {["Premiere Pro", "CapCut", "Canva"].map((tool) => (
                 <span
                   key={tool}
                   className="px-5 py-3 border border-gray-600/50 text-gray-400 hover:text-white hover:border-white transition-all cursor-default"

@@ -80,7 +80,7 @@ export function BeforeAfter() {
 
           <div className="md:text-right hidden sm:block">
              <p className="text-gray-500 font-mono text-[10px] tracking-[0.2em] uppercase max-w-[250px] ml-auto">
-               Drag the slider to reveal the grade, the crop, and the intention.
+               Drag the slider to reveal the cut, the crop, and the intention.
              </p>
           </div>
         </motion.div>
@@ -166,7 +166,7 @@ export function BeforeAfter() {
         {/* Mobile Description Fallback */}
         <div className="mt-8 text-center sm:hidden">
             <p className="text-gray-500 font-mono text-[10px] tracking-[0.2em] uppercase">
-              Drag to reveal the grade &amp; crop.
+              Drag to reveal the cut &amp; crop.
             </p>
         </div>
 

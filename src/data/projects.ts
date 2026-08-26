@@ -8,7 +8,7 @@ export const projects: Project[] = [
     category: "Motivation / Growth",
     year: "2024",
     description: "An impactful narrative piece exploring personal growth and motivation, driven by emotive pacing and a cohesive visual flow.",
-    role: "Edited & Graded by Rishu",
+    role: "Edited by Rishu",
     videoPreviewUrl: "/videos/project-1.mp4",
     posterUrl: "/images/poster-1.jpg",
   },
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     title: "GRIND ZONE",
     category: "Fitness / Gym",
     year: "2024",
-    description: "A hard-hitting gym aesthetic cut driven by rapid-fire transition design, deep bass impacts, and high-energy color treatments.",
+    description: "A hard-hitting gym aesthetic cut driven by rapid-fire transition design, deep bass impacts, and high-energy pacing.",
     role: "Edited & Sound Designed by Rishu",
     videoPreviewUrl: "/videos/project-4.mp4",
     posterUrl: "/images/poster-4.jpg",
@@ -52,14 +52,6 @@ export const timelineParts: TimelinePart[] = [
     description: "Every cut is a decision. Every frame counts.",
     videoUrl: "/videos/timeline-cutting.mp4",
     icon: "scissors"
-  },
-  {
-    id: "color",
-    title: "COLOR",
-    subtitle: "Mood & Tone",
-    description: "Color tells the story before dialogue ever could.",
-    videoUrl: "/videos/timeline-color.mp4",
-    icon: "palette"
   },
   {
     id: "sound",
