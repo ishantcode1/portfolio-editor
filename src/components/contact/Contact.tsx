@@ -61,7 +61,7 @@ export function Contact() {
             <ul className="space-y-3 font-mono text-xs tracking-wide text-gray-300 font-medium">
               <li className="hover:text-white transition-colors duration-300 cursor-default">Reels / Short Videos</li>
               <li className="hover:text-white transition-colors duration-300 cursor-default">Event Recaps</li>
-              <li className="hover:text-white transition-colors duration-300 cursor-default">YouTube Videos</li>
+              <li className="hover:text-white transition-colors duration-300 cursor-default">YouTube Videos (Shorts)</li>
             </ul>
           </div>
 

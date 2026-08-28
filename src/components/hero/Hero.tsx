@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useState } from "react";
 
 export function Hero() {
@@ -73,11 +73,11 @@ export function Hero() {
           whileTap={{ scale: 0.95 }}
           onClick={handleStart}
           className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-mono text-sm tracking-widest uppercase font-bold overflow-hidden"
-          data-cursor="play"
-          data-cursor-text="START"
+          data-cursor="view"
+          data-cursor-text="SCROLL"
         >
-          <Play className="w-4 h-4 fill-current" />
-          <span>PRESS PLAY</span>
+          <ArrowDown className="w-4 h-4" />
+          <span>SCROLL TO EXPLORE</span>
 
           {/* Hover Effect */}
           <motion.div

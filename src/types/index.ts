@@ -18,6 +18,7 @@ export interface Project {
   year: string;
   description: string;
   role?: string;
+  isVertical: boolean;
   videoPreviewUrl: string; // URL to a muted, fast-loading MP4 preview
   videoFullUrl?: string;    // URL to full video (e.g., YouTube/Vimeo ID or raw MP4)
   videoRawUrl?: string;     // URL to RAW footage for comparison

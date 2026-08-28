@@ -25,7 +25,7 @@ export function Work() {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
@@ -92,10 +92,10 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       transition={{ duration: 0.8, delay: index * 0.1 }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group relative cursor-pointer"
+      className={`group relative cursor-pointer ${!project.isVertical ? "md:col-span-3 md:order-last" : ""}`}
     >
-      {/* STRICT 16:9 Video Preview */}
-      <div className="relative bg-gray-900 overflow-hidden mb-6 aspect-video">
+      {/* Video Preview */}
+      <div className={`relative bg-gray-900 overflow-hidden mb-6 ${project.isVertical ? "mx-auto w-full max-w-[220px] aspect-[9/16] md:max-w-[260px]" : "mx-auto w-full max-w-5xl aspect-video"}`}>
         <video
           ref={videoRef}
           poster={project.posterUrl}
